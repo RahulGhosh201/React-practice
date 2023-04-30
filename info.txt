@@ -1,0 +1,95 @@
+react 17 e amra either cdn use kore or 
+import react from "react"
+import ReactDOM from "react-dom"
+ 
+  &
+
+ ReactDOM.render(navbar,document.getElementById("root"))
+ use kortam 
+
+
+ BUT
+
+ react 18 e eta use korle warning debe so ekhane
+ import react from "react"
+import ReactDOM from "react-dom/client"
+&
+ReactDOM.craeteRoot(document.getElementById("root")).render(navbar)
+
+
+or
+
+const root=ReactDOM.craeteRoot(document.getElementById("root"))
+root.render(navbar)
+use korte hbe
+
+
+
+QUIZ
+===========
+1. Why do we need to `import React from "react"` in our files?
+--
+amra jsx e je code ta likh6i seta React import korar folei acceptable h66e
+
+
+2. If I were to console.log(page) in index.js, what would show up?
+--
+page asole ekta object r moto kaj kore so console e amra ekta object dekhte pabo
+
+
+3. What's wrong with this code:
+const page = (
+    <h1>Hello</h1>
+    <p>This is my website!</p>
+)
+--
+ekhane h1 tag theke jsx start hye6e and amra jani jsx code ta kono single parent element r modhye thaka uchit mane like puro jsx code ta jodi amra ekta div tag r modhye rakhtam tahole problem hoto na
+
+
+4. What does it mean for something to be "declarative" instead of "imperative"?
+--
+declarative mne bojhay amra computer k bole debo what to do & expect from the computer to handle it on it's own.
+where as imperative means amra each step computer k bole debo.
+react is declarative that's why we use it.
+
+
+5. What does it mean for something to be "composable"?
+--
+composable means creating a larger/greater something with the help of smaller pieces. mane amra various small part k use kore puro project ta complete kori.
+
+
+6. What is a React component?
+--
+react component returns a react element . react element holo ekti oject that gets created when we return jsx. puro jsx code ta eksathe ekta js object create kore.
+react component k UI o bola hye thake.
+
+
+7. What's wrong with this code?
+```
+function myComponent() {
+    return (
+        <small>I'm tiny text!</small>
+    )
+}
+```
+here instead of myComponent it should be MyComponent. always the first letter of the function should be in capital.
+It's called Pascal case.
+
+
+8. What's wrong with this code?
+```
+function Header() {
+    return (
+        <header>
+            <nav>
+                <img src="./react-logo.png" width="40px" />
+            </nav>
+        </header>
+    )
+}
+
+ReactDOM.render(Header(), document.getElementById("root"))
+```
+
+here instead of ReactDOM.render(Header(), document.getElementById("root"))
+it should be ReactDOM.render(<Header />, document.getElementById("root"))
